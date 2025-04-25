@@ -90,7 +90,7 @@ struct TimerView: View {
             }
                     timeElapsed += 1
             
-                    if Int(timeElapsed) % 10 == 0 {
+                    if Int(timeElapsed) % 120 == 0 {
                         var newPoints = sessionManager.currentSession?.points ?? 0
                         var newBadges = sessionManager.currentSession?.badges ?? []
                         newPoints += 1
